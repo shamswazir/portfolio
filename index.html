@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Shams Wazir</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="">Shams Wazir</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="btn btn-primary" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#experience">Experience</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#project">Project</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <!--
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+                -->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hello!</span>
+                <span class="down">I'm Shams Wazir</span>
+            </h1>
+
+            <span class="header-subtitle" id="typing-animation"></span> <br><br>
+						<script>
+
+                            // Initialize the typing animation
+                            const typingAnimationElement = document.getElementById('typing-animation');
+    
+                            // Create an array of typing text
+                            const typingTexts = [
+                            'QlikSense Certified Developer ',
+                            'Power BI Certified Developer  ',
+                            'Web Developer ',
+                            ];
+    
+                            // Create a function to display the typing animation for a given text
+                            function playTypingAnimation(text) {
+                            // Loop through each character and add it to the element
+                            for (let i = 0; i < text.length; i++) {
+                                setTimeout(() => {
+                                typingAnimationElement.textContent += text[i];
+                                }, i * 200); // Increase the delay to slow down the typing animation
+                            }
+    
+                            // Once the animation is complete, reset the text and start over
+                            setTimeout(() => {
+                                typingAnimationElement.textContent = '';
+                                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                            }, text.length * 200);
+                            }
+    
+                            // Start the typing animation loop
+                            playTypingAnimation(typingTexts[0]);
+    
+                            </script>
+
+
+            <a href="#experience">
+                <button class="btn btn-primary">Visit My Works</button>
+            </a>
+            
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/3.jpeg" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p class="section-subtitle">
+                        I'm from Ranchi, Jharkhand, India. <br>
+                        I completed my bachelor from the University of Engineering & Management, Kolkata, India. <br>
+                        Having 
+                        <script>   
+                            let exp= Number(new Date().getFullYear());
+                            let start = Number(2022);
+                            document.write(exp-start);                         
+                         </script>+ years of experience in an IT career. 
+                         Aiming to work in a rapidly growing organization that provides a dynamic and challenging
+                         work environment and helps in growing to the highest position. Capable of understanding the
+                         business requirements. Currently, I'm working as a QlikSense developer at Cognizant. I upgraded myself to Power BI and Python and am learning databricks for my future data engineering career.
+                        <br>
+                      
+                    </p>
+                    <a href="assets/imgs/Shams_Wazir_Resume.pdf" download>
+                        <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    </a>
+                    
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">QlikSense Developer</h6>
+                            <p class="subtitle">
+                                Currently, I'm working as a QlikSense developer at Cognizant. 
+                                I'm a QlikSense Data Architech (QSDA)-certified developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Power BI Developer</h6>
+                            <p class="subtitle">
+                                I'm a Power BI Data Analyst (PL-300) certified developer. 
+                                Having good experience on data modeling in Power BI. I built a project using Power BI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg "
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Web Developer</h6>
+                            <p class="subtitle">
+                                During my college years, I was designing websites. 
+                                Having a good understanding of HTML, CSS, JavaScript, and ReactJS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg "
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Data Engineer</h6>
+                            <p class="subtitle">
+                                I'm learning Databricks. 
+                                I know Python, which helps me to understand Pyspark and upskill myself on Data Engineer. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="experience">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Experience</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#experience" class="portfolio-card">
+                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>QlikSense Developer</h5>
+                                    <p class="font-weight-normal">Company: Cognizant</p>
+                                    <p class="section-subtitle" style="text-align: left; padding: 10px;"> 
+                                        As a fresher, I joined Cognizant with the title of Programmer 
+                                        Analyst Trainee (PAT).
+                                        It is my first company. Here, I am working as a QlikSense developer.
+                                    </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="assets/imgs/Chegg Experience.pdf" download class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Problem Solving</h5>
+                                    <p class="font-weight-normal">Company: Chegg India</p>
+                                    <p class="section-subtitle" style="text-align: left; padding: 10px;">
+                                        In my 3rd year of B.Tech, I joined Chegg India as a Computer Science Expert, 
+                                        where I was solving students's questions. I worked there for almost two years.
+                                    </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="assets/imgs/Slogfy Experience.pdf" download class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Developer</h5>
+                                    <p class="font-weight-normal">Company: Slogfy</p>
+                                    <p class="section-subtitle" style="text-align: left; padding: 10px;">
+                                        I got an internship opportunity during my final year.
+                                        I completed a 6-month internship in web development. 
+                                        Using html, CSS, javascript, Reactjs for frond end and node.js for backend.
+                                    </p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+   
+    <!-- blog section -->
+    <section class="section" id="project">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Work?</p>
+            <h6 class="section-title mb-6">Project</h6>
+
+
+
+            
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/ARNI.jpg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">ARNI Project</h6>
+
+                        <p class="blog-card-caption">
+                            <a>Category: QlikSense</a>
+                        </p>
+
+                        <p class="section-subtitle">
+                            ARNI is one of the supply chain applications. Currently I'm working on this application. 
+                            It is a development application from scratch. I flowed the 3-tier architecture, such as extract,
+                             transform, and final application. I'm gathering the data from the SAP, Snowflake, and flat files
+                              in the extract application, then storing it into the qvd for faster retrieval in the transform
+                               application. In the transform application, I'm loading all those QVD converted data and applying 
+                               the transformation as per the client requirement. After applying the transformation, then storing
+                                the data in QVD format for the final load. In the final application, I'm loading transformed QVD
+                                 and creating the data model based on the table key. Once final application scripting is complete,
+                                  I'll create the charts as per the client's request.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Supply.jpg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Supply Chain Project</h6>
+
+                        <p class="blog-card-caption">
+                            <a>Category: QlikSense</a>
+                        </p>
+
+                        <p class="section-subtitle">
+                            Supply chain project in the pharmacy sector involves managing
+                            the flow of medications from manufacturers to end-users, ensuring that
+                            they are delivered safely, efficiently, and cost-effectively. <br>
+                            Currenlty, I'm working in this project and support multiple application.
+                            In this project, my responsibility is to resolve the user's tickets. Users are mainly
+                            raising the tickets for understanding the data from the SAP and what logic we applied
+                            on the Qlik application.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+
+
+
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Orbit.png" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Orbit Dashboard</h6>
+
+                        <p class="blog-card-caption">
+                            <a>Category: QlikSense</a>
+                        </p>
+
+                        <p class="section-subtitle">
+                            In this project, I was working as a Qliksense developer at Cognizant.
+                             It was my first real-world project in my IT career. My responsibility was
+                              to remove unused data from the dashboard. I worked on 20+ applications for
+                               removing unused data in this project. All those applications flow through
+                                a 3-tier architecture. So, I was filtering out the unused data from the
+                                 source of the extract layer. After filtering the unsed data, I was storing
+                                 those data as qvd for the transform layer. 
+
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-2.jpg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Finance Dashboard</h6>
+
+                        <p class="blog-card-caption">
+                            <a>Category: Power BI</a>
+                        </p>
+
+                        <p class="section-subtitle">
+                            Using Power BI, I developed a business dashboard. It is a financial dashboard.
+                            This dashboard has multiple charts that have been created, such as KPIs, line charts,
+                            bar charts, buttons, maps, donut charts, sliders, and tables. The dashboard gives us
+                            information such as total revenue, total profit, total orders, return rate of products,
+                            monthly revenue, monthly profit, and monthly orders.
+                        </p>
+
+                        <a href="https://github.com/shamswazir/Power-BI-Project" target="_blank" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Room.jpg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Room fetching system</h6>
+
+                        <p class="blog-card-caption">
+                            <a>Category: Web Design</a>
+                        </p>
+                        <p class="section-subtitle">
+                            Room fetching system is web application using reactjs javascript library,html,css and javascript. In this project user can fetch room base on
+price and room feature. It is simple project but I have good command on reactjs after develop this project you can check-out.It is fully
+responsive on computer and different mobile.
+                        </p>
+                        <a href="https://shamswazir.github.io/room_booking/" target="_blank" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+
+
+     <!-- testimonial section -->
+     <section class="section" id="blog">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Think</p>
+            <h6 class="section-title mb-6">I believe</h6>
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/2.jpeg" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">
+                                Thinking about the result
+                                never gives you results. What is more important is to take
+                                the small steps in life. You know what needs to be done. 
+                                Whatever the controllables are, we take care of them and get 
+                                the desired result. If we don't get the desired result, we'll improve.
+                                We'll change our plan, we'll execute better, and we'll get a chance to
+                                prove ourselves again.
+                            </p>
+                            <h6 class="testimonial-card-title">Shams</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/4.jpg" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">
+                                You can't change your future but you can change your habits and
+                                surely your habits will change your future. So, face the failure
+                                until failure fails to face you. Don't compare yourself with other people; 
+                                compare yourself with who you were yesterday. At the end, everything will be fine. If not,
+                                then it is not your end—something left behind you 😊. Wait for your time.
+                            </p>
+                            <h6 class="testimonial-card-title">Shams</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <a href="#contact">
+                        <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                    </a>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+                <input type="hidden" name="access_key" value="3de757e3-5930-43cc-921c-e45d136b62eb">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Enter Your Name" name="full_name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input class="form-control" placeholder="Enter Your Email" name="email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright ©
+                <script>document.write(new Date().getFullYear())</script> All rights reserved; 
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">                
+                <a href="https://www.linkedin.com/in/shams-w-a08529193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://www.facebook.com/share/JWWrvv8aXGQwyN2B/?mibextid=qi2Omg" target="_blank" class="link"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/shams.wazir_/profilecard/?igsh=b3I3dXJpNDdmZDhu" target="_blank" class="link"><i class="ti-instagram"></i></a>
+                <a href="assets/imgs/Shams_Wazir_CV.docx" download class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
